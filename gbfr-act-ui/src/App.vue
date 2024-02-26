@@ -1,5 +1,8 @@
 <script setup lang="js">
 import {onMounted, onUnmounted, reactive, ref, watch} from 'vue'
+// import { useI18n } from 'vue-i18n'
+// const { t } = useI18n()
+import {i18nCfg} from "./act_ws_texts.js";
 
 const _with_time = f => (...args) => {
   const now = new Date();

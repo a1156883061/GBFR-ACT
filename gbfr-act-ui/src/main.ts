@@ -3,15 +3,14 @@ import './style.css'
 import mainPage from './App.vue'
 
 import ElementPlus from 'element-plus';
-import {createI18n} from 'vue-i18n';
 import * as Icons from '@element-plus/icons';
-import {i18nCfg} from './act_ws_texts.js'
+import {i18n} from "./locale/i18n.ts";
+import 'element-plus/theme-chalk/index.css';
 
 
 let App = createApp(mainPage);
 App.use(ElementPlus);
 
-const i18n = createI18n(i18nCfg);
 App.use(i18n);
 
 
